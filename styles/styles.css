@@ -23,3 +23,8 @@
 .color-fondo-contactos{
   background-color: var(--color-primario);
 }
+
+.lau{ display: flex;
+justify-content: center;
+border: 4px solid mediumslateblue;}
+
