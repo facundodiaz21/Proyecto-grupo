@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+:root {
+  --color-primario: #7952b3;
+  --primer-fuente: "Open Sans", sans-serif;
+}
+.barra-item {
+  font-family: "Open Sans", sans-serif;
+}
+.fondo-barra {
+  background-color: var(--color-primario);
+}
+.fondo-logo {
+  width: 70px;
+  height: 60px;
+  object-fit: cover;
+   /* border: 2px solid green; */
+}
+.logo-compras {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.color-fondo-contactos{
+  background-color: var(--color-primario);
+}
+
 .lau{ display: flex;
 justify-content: center;
 border: 4px solid mediumslateblue;}
+

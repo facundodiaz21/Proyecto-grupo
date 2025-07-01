@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Share Tech", sans-serif;
+  color: #ffff;
+  /* font-weight: 400;
+  font-style: normal; */
+}
+body {
+  background-color: #7952b3;
+}
+.header {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navbar {
+  background-color: #5e3f8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+  span {
+    color: #d4af37;
+  }
+}
+.logo {
+  width: 100px;
+}
+.main {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+  margin: auto;
+  gap: 5px;
+  width: 950px;
+}
+.section {
+  /* border: 2px solid red; */
+  width: 280px;
+  height: 390px;
+  margin: 15px;
+  box-shadow: 3px 3px 3px 5px #5e3f8e;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.contenedor-image {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 250px;
+}
+.item-img {
+  height: 100%;
+  width: 100%;
+}
+.contenedor-texto {
+  /* border: 2px solid blue; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  margin-top: 4px;
+}
+.decision {
+  text-align: center;
+  margin: 15px auto;
+  box-shadow: 2px 2px 2px 3px #5e3f8e;
+  padding: 15px;
+}
+.decision-2{
+  margin-bottom: 5px;
+}
+.decision-3{
+  font-size: 1.3em;
+}

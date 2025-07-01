@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>proyecto-juegos</title>
+    <title>Insert Coin</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -11,51 +11,114 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">ZONA JUEGOS</a>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >sobre nosotros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">inicar secion</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <!-- boton de compra -->
-              <button class="btn btn-outline-success bg-dark" type="submit">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-cart-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
-                  />
-                </svg>
+    <!-- HEADER Y NAVBAR -->
+    <nav class="navbar navbar-expand-lg fondo-barra">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav barra-item">
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Contactos
               </button>
-            </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pages/nosotros.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="caja1 w-50">
+          <img
+            src="images/logo-pacman.png.png"
+            alt=" logo de pacman"
+            class="fondo-logo"
+          />
+        </div>
+        <ul class="navbar-nav barra-item">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#"
+              ><img
+                src="https://img.icons8.com/?size=100&id=ii6Lr4KivOiE&format=png&color=000000"
+                alt="carro de compras"
+                class="logo-compras"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog ">
+        <div class="modal-content color-fondo-contactos">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Contactos</h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label text-white fw-bold"
+                >Email:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Rolling@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label text-white fw-bold"
+                >Mensaje que desea enviar:</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Escribe tu comentario..."
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn bg-light fw-bold"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn bg-light fw-bold">Enviar</button>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+
       <!-- navbar de busqueda -->
       <h2>navbar de busqueda</h2>
       <h2>Zona Juegos</h2>
@@ -143,7 +206,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </header>
     <!-- links de boostrap -->
 
     <script
