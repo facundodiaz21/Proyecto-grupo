@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert Coin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER Y NAVBAR -->
+    <nav class="navbar navbar-expand-lg fondo-barra">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav barra-item">
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Contactos
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./pages/nosotros.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="caja1 w-50">
+          <img
+            src="images/logo-pacman.png.png"
+            alt=" logo de pacman"
+            class="fondo-logo"
+          />
+        </div>
+        <ul class="navbar-nav barra-item">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#"
+              ><img
+                src="https://img.icons8.com/?size=100&id=ii6Lr4KivOiE&format=png&color=000000"
+                alt="carro de compras"
+                class="logo-compras"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog ">
+        <div class="modal-content color-fondo-contactos">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Contactos</h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label text-white fw-bold"
+                >Email:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Rolling@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label text-white fw-bold"
+                >Mensaje que desea enviar:</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Escribe tu comentario..."
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn bg-light fw-bold"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn bg-light fw-bold">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
