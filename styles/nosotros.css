@@ -12,11 +12,12 @@ body {
   background-color: #7952b3;
 }
 .header {
-  margin: 20px;
+  /* margin: 20px; */
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
 }
 .navbar {
   background-color: #5e3f8e;
