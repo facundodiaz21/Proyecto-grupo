@@ -17,13 +17,13 @@
     <!-- HEADER Y NAVBAR -->
     <nav class="navbar navbar-expand-lg fondo-barra">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav barra-item">
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav barra-item ">
             <li class="nav-item">
               <!-- Button trigger modal -->
               <button
                 type="button"
-                class="btn text-white"
+                class="btn text-white item-nav"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
@@ -31,24 +31,24 @@
               </button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="./pages/nosotros.html"
+              <a class="nav-link text-white btn item-nav" href="./pages/nosotros.html"
                 >Sobre Nosotros</a
               >
             </li>
           </ul>
         </div>
-        <div class="caja1 w-50">
+        <div class="caja1">
           <img
-            src="images/logo-pacman.png.png"
+            src="images/logopacman2.jpg.png"
             alt=" logo de pacman"
             class="fondo-logo"
           />
         </div>
         <ul class="navbar-nav barra-item">
           <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="#"
+            <a class="nav-link " aria-current="page" href="#"
               ><img
-                src="https://img.icons8.com/?size=100&id=ii6Lr4KivOiE&format=png&color=000000"
+                src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
                 alt="carro de compras"
                 class="logo-compras"
             /></a>
@@ -68,15 +68,10 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
-        <div class="modal-content color-fondo-contactos">
+      <div class="modal-dialog ">
+        <div class="modal-content fondo-modal">
           <div class="modal-header">
-            <h1
-              class="modal-title fs-5 text-white fw-bold"
-              id="exampleModalLabel"
-            >
-              Contactos
-            </h1>
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Contactos</h1>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -85,44 +80,47 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="mb-3">
-              <label
-                for="exampleFormControlInput1"
-                class="form-label text-white fw-bold"
-                >Email:</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Rolling@ejemplo.com"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label
-                for="exampleFormControlTextarea1"
-                class="form-label text-white fw-bold"
-                >Mensaje que desea enviar:</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Escribe tu comentario..."
-                required
-              ></textarea>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn bg-light fw-bold"
-              data-bs-dismiss="modal"
-            >
-              Cerrar
-            </button>
-            <button type="button" class="btn bg-light fw-bold">Enviar</button>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="validationCustomUsername" class="form-label text-white"
+                  >Email:</label
+                >
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    placeholder="Rolling@gmail.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese un email valido.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control tamaño-textarea"
+                    id="floatingTextarea2"
+                    placeholder="Por favor escriba aqui su comentario..."
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un comentario valido.
+                  </div>
+                  <label for="floatingTextarea2"
+                    >Por favor escriba aqui su comentario...</label
+                  >
+                </div>
+              </div>
+              <div class="boton-form">
+                <button type="submit" class="btn text-white  boton-modal">Enviar</button>
+              </div>
+            </form>
+     
           </div>
         </div>
       </div>
@@ -399,5 +397,30 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
