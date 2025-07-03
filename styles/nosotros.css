@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+
+:root {
+  --color-primario: #7952b3;
+  --color-secundario: #5e3f8e;
+  --primer-fuente: "Open Sans", sans-serif;
+  --color-prueba1: #192338;
+  --color-prueba2: #1e2e4f;
+  --color-prueba3: #31487a;
+  --color-prueba4: #8fb3e2;
+  --color-prueba5: #d9e1f1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,21 +21,24 @@
   font-style: normal; */
 }
 body {
-  background-color: #7952b3;
+  background-color: var(--color-prueba3);
 }
 .header {
-  /* margin: 20px; */
+  margin-bottom: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
 }
 .navbar {
-  background-color: #5e3f8e;
+  background-color: var(--color-prueba1);
+
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
+
   a {
     text-decoration: none;
   }
@@ -41,28 +56,32 @@ body {
   align-items: center;
   flex-flow: wrap;
   margin: auto;
-  gap: 5px;
+  gap: 15px;
   width: 950px;
 }
 .section {
-  /* border: 2px solid red; */
+  /* border: 5px solid red; */
   width: 280px;
   height: 390px;
   margin: 15px;
-  box-shadow: 3px 3px 3px 5px #5e3f8e;
+  box-shadow: 3px 3px 3px 2px var(--color-prueba4);
+  background-color: var(--color-prueba1);
   transition: all 0.5s ease;
+  border-radius: 13px 13px 0px 0px;
+
   &:hover {
     transform: scale(1.1);
   }
 }
 .contenedor-image {
-  /* border: 2px solid green; */
+  /* border: 5px solid green; */
   width: 100%;
   height: 250px;
 }
 .item-img {
   height: 100%;
   width: 100%;
+  border-radius: 13px 13px 0px 0px;
 }
 .contenedor-texto {
   /* border: 2px solid blue; */
@@ -74,14 +93,16 @@ body {
   margin-top: 4px;
 }
 .decision {
+  background-color: var(--color-prueba1);
+  border-radius: 2px 30px;
   text-align: center;
-  margin: 15px auto;
-  box-shadow: 2px 2px 2px 3px #5e3f8e;
+  margin: 30px 20px;
+  /* box-shadow: 2px 2px 2px 3px #5e3f8e; */
   padding: 15px;
 }
-.decision-2{
+.decision-2 {
   margin-bottom: 5px;
 }
-.decision-3{
+.decision-3 {
   font-size: 1.3em;
 }

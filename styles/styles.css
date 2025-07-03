@@ -1,28 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
 :root {
   --color-primario: #7952b3;
+  --color-secundario: #5e3f8e;
   --primer-fuente: "Open Sans", sans-serif;
+  --color-prueba1: #192338;
+  --color-prueba2: #1e2e4f;
+  --color-prueba3: #31487a;
+  --color-prueba4: #8fb3e2;
+  --color-prueba5: #d9e1f1;
 }
 .barra-item {
   font-family: "Open Sans", sans-serif;
 }
 .fondo-barra {
-  background-color: var(--color-primario);
+  background-color: var(--color-prueba1);
 }
 .fondo-logo {
-  width: 70px;
+  width: 300px;
   height: 60px;
   object-fit: cover;
-   /* border: 2px solid green; */
+  /* border: 2px solid green; */
 }
 .logo-compras {
   width: 30px;
   height: 30px;
   object-fit: cover;
 }
-.color-fondo-contactos{
+.color-fondo-contactos {
   background-color: var(--color-primario);
 }
+.boton-form {
+  display: flex;
+  justify-content: end;
+}
+.tamaño-textarea {
+  min-height: 100px;
+  max-height: 100px;
+}
+.nav-item {
+  height: 38px;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: var(--color-prueba3);
+  }
+}
+.item-nav {
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: var(--color-prueba3);
+  }
+}
+
+/* MODIFICACIONES MODAL */
+.fondo-modal {
+  background-color: var(--color-prueba2);
+}
+.boton-modal {
+  background-color: var(--color-prueba1);
+  transition: all 0.5s ease ;
+  &:hover {
+    background-color: var(--color-prueba1);
+  }
+}
+
 
 .lau{ display: flex;
 justify-content: center;
