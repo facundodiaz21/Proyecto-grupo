@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+/* *{
+  border: 1px solid red;
+} */
 :root {
   --color-primario: #7952b3;
   --color-secundario: #5e3f8e;
@@ -85,6 +88,11 @@
   margin: 10px;
   /* width: 100%; */
 }
+.item-img-desc {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
 /* MEDIAQUERIES */
 @media (min-width: 768px) {
   .cont-card-desc {
@@ -113,6 +121,7 @@
 .carrusel {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 /* buscador */
 .search-bar {
@@ -138,6 +147,25 @@
   display: flex;
   justify-content: center;
 }
+
+.carrusel-prueba {
+  width: 100%;
+}
+
+.seccion-destacados {
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      height: 100%;
+    }
+    img {
+      aspect-ratio: 286 / 160;
+    }
+  }
+}
+
 
 /* SECCION CATEGORIAS POR OCTAVIO */
 body {
@@ -174,3 +202,4 @@ body {
       .category-link {
         text-decoration: none;
       }
+
