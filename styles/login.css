@@ -19,6 +19,7 @@
 }
 .celu {
   width: 80%;
+  border-radius: 1rem;
 }
 
 @media (min-width: 768px) {
