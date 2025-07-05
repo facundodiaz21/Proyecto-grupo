@@ -56,13 +56,548 @@
             /></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Login</a>
+            <a class="nav-link text-white" href="./pages/login.html">Login</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Modal -->
+    <main>
+      <!-- navbar de busqueda -->
+      <section class="buscador">
+        <div class="contenedor-search">
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="busca aqui tu juego"
+              name="busqueda"
+            />
+            <button type="button" class="btn btn-outline-primary">🔎</button>
+          </div>
+        </div>
+      </section>
+      <!-- Carousel -->
+      <section>
+        <div class="carrusel">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner carrusel-prueba">
+              <div class="carousel-item active">
+                <img
+                  src="https://img.unocero.com/2019/09/grand-theft-auto-san-andreas-gratis-descargar-1-1.jpg"
+                  class="d-block w-100"
+                  alt="gta san andreas"
+                  height="700"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white fs-2">GTA SAN ANDREAS</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://c.wallhere.com/photos/b1/39/Assassin's_Creed_Mirage_4K_Assassin's_Creed_Ubisoft_video_games_video_game_man_video_game_characters-2171817.jpg!d"
+                  class="d-block w-auto"
+                  alt="assassin's creed"
+                  height="700"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white fs-2">ASSASSIN'S CREED</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg"
+                  class="d-block w-auto"
+                  alt="minecraft"
+                  height="700"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white fs-2">MINECRAFT</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- SECCION DESTACADOS -->
+      <div class="container">
+        <section
+          class="seccion-destacados row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 my-4"
+        >
+          <div class="col">
+            <!-- TARJETA 1 -->
+            <div class="card mb-3" style="max-width: 18rem">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtoIAiZC5QTHvKawK5E5pRexfBUEKiJQoIA&s"
+                alt="imagen del juego Grand Theft Auto V"
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  Grand Theft Auto V es un videojuego de acción-aventura de
+                  mundo abierto desarrollado por Rockstar North y publicado por
+                  Rockstar Games.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TARJETA 2  -->
+            <div class="card mb-3" style="width: 18rem">
+              <img
+                src="https://s03.s3c.es/imag/_v0/1200x655/d/9/e/ea-fc-25-fifa.jpg"
+                alt="imagen del juego Fifa "
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  FIFA es una serie de videojuegos de simulación de fútbol
+                  desarrollada y publicada por Electronic Arts bajo la marca EA
+                  Sports.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TARJETA 3  -->
+            <div class="card mb-3" style="width: 18rem">
+              <img
+                src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1RLdppgLllgGZlkjuvHBu6/abbcf1e12935e4654a109324955a5087/RED_KEYART_STD_RGB_WW.jpg"
+                alt="imagen del juego Assassin's Creed Shadows"
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  Assassin's Creed Shadows es un videojuego de acción-aventura
+                  de mundo abierto y sigilo desarrollado por Ubisoft Quebec y
+                  publicado por Ubisoft.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TARJETA 4 -->
+            <div class="card mb-3" style="width: 18rem">
+              <img
+                src="https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b"
+                alt="imagen del juego  League of Legends "
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  League of Legends es un videojuego multijugador de arena de
+                  batalla en línea desarrollado y publicado por Riot Games
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TARJETA 5 -->
+            <div class="card mb-3" style="width: 18rem">
+              <img
+                src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000010192/f26fc9e1b11ce01369966ed9225e320a293c4eaad1329774f125e05629ffd437"
+                alt="imagen del juego Fornite"
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  Fortnite es un videojuego del año 2017 desarrollado por la
+                  empresa Epic Games lanzado como diferentes paquetes de
+                  software.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TARJETA 6  -->
+            <div class="card mb-3" style="width: 18rem">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcXT8ddSbjjLw9IakVCfgNy5T1TuMKTizZw&s"
+                alt="imagen del juego  Counter-Strike"
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  Counter-Strike: Global Offensive (CSGO) es un videojuego de
+                  disparos en primera persona desarrollado por Valve Corporation
+                  y Hidden Path Entertainment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TARJETA 7 -->
+
+            <div class="card mb-3" style="width: 18rem">
+              <img
+                src="https://image.api.playstation.com/vulcan/ap/rnd/202503/2819/346190abf755e3883d1353fbc8d8ccb7e1acf076f1138d6b.jpg"
+                alt="imagen del juego Call of Duty"
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  Call of Duty es una serie de videojuegos de disparos en
+                  primera persona, de estilo bélico, desarrollada principal e
+                  inicialmente por Infinity Ward
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- TARJETA 8 -->
+            <div class="card mb-3" style="width: 18rem">
+              <img
+                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1665460/921fc2c1953dfcb27cf31a845e4da4015c78edc7/capsule_616x353.jpg?t=1750996206"
+                alt="imagen del juego eFootball"
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  eFootball es un videojuego de simulación de fútbol
+                  desarrollado por Konami Digital Entertainment y publicado por
+                  Konami. El juego es la 21
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- SECCION DESTACADOS -->
+      <section>
+        <div class="container py-5">
+          <!-- Título -->
+          <h2 class="text-center fw-bold text-dark mb-5">
+            Sección de Categoría
+          </h2>
+
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center"
+          >
+            <!-- Terror -->
+            <div class="col-6 col-md-3">
+              <a href="" class="category-link">
+                <div class="category-card">
+                  <img
+                    src="./images/ChatGPT_Image_3_jul_2025__08_10_06_p.m.-removebg-preview.png"
+                    alt="Terror"
+                  />
+                  <h5 class="category-title">Terror</h5>
+                </div>
+              </a>
+            </div>
+
+            <!-- Aventura -->
+            <div class="col-6 col-md-3">
+              <a href="" class="category-link">
+                <div class="category-card">
+                  <img
+                    src="./images/ChatGPT_Image_3_jul_2025__08_05_15_p.m.-removebg-preview.png"
+                    alt="Aventura"
+                  />
+                  <h5 class="category-title">Aventura</h5>
+                </div>
+              </a>
+            </div>
+
+            <!-- Deporte -->
+            <div class="col-6 col-md-3">
+              <a href="" class="category-link">
+                <div class="category-card">
+                  <img
+                    src="./images/ChatGPT_Image_3_jul_2025__08_11_06_p.m.-removebg-preview.png"
+                    alt="Deporte"
+                  />
+                  <h5 class="category-title">Deporte</h5>
+                </div>
+              </a>
+            </div>
+
+            <!-- Acción -->
+            <div class="col-6 col-md-3">
+              <a href="" class="category-link">
+                <div class="category-card">
+                  <img
+                    src="./images/ChatGPT_Image_3_jul_2025__08_20_01_p.m.-removebg-preview.png"
+                    alt="Acción"
+                  />
+                  <h5 class="category-title">Acción</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECCION DESCUENTOS -->
+      <section class="cont-card-desc">
+        <div class="card hijo-card-desc">
+          <div class="row g-0 h-100">
+            <div class="col-md-4">
+              <img
+                src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/el-remaster-de-gta-v-para-one-y-ps4-llega-el-18-de-noviembre/18311506-1-esl-ES/El-remaster-de-GTA-V-para-One-y-PS4-llega-el-18-de-noviembre.png"
+                class="img-fluid rounded-start item-img-desc"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body h-100">
+                <h5 class="card-title text-center texto-titulo-descrip">
+                  Grand Thef Auto V
+                </h5>
+                <p class="card-text text-center">
+                  Es un videojuego de mundo abierto de Rockstar Games,
+                  ambientado en la ciudad ficticia de Los Santos. Sigue a tres
+                  protagonistas —Michael, Franklin y Trevor— en misiones de
+                  acción y crimen. Destaca por su libertad, gráficos detallados
+                  y un popular modo en línea.
+                </p>
+                <p class="card-text">
+                  <small class="text-body fs-3">$149.99</small>
+                  <span class="text-body-secondary precio-detalle"
+                    >$199.99</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hijo-card-desc">
+          <div class="row g-0 h-100">
+            <div class="col-md-4">
+              <img
+                src="https://www.clarin.com/img/2024/07/17/ORRRfEnDj_600x600__1.jpg"
+                class="img-fluid rounded-start item-img-desc"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-center texto-titulo-descrip">
+                  FIFA 2025
+                </h5>
+                <p class="card-text text-center">
+                  Es un videojuego de fútbol de EA Sports que ofrece una
+                  experiencia realista con mejoras en gráficos, jugabilidad y
+                  modos como Carrera y Ultimate Team. Incluye licencias
+                  oficiales de ligas, clubes y jugadores de todo el mundo.
+                </p>
+                <p class="card-text">
+                  <small class="text-body fs-3">$129.99</small>
+                  <span class="text-body-secondary precio-detalle"
+                    >$169.99</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hijo-card-desc">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://acid.la/wp-content/uploads/2022/06/FORTNITE-PORTADA.jpg"
+                class="img-fluid rounded-start h-100 item-img-desc"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-center texto-titulo-descrip">
+                  Fornite
+                </h5>
+                <p class="card-text text-center">
+                  Es un videojuego multijugador de Epic Games que combina
+                  acción, construcción y supervivencia. Su modo más popular,
+                  Battle Royale, enfrenta a 100 jugadores en partidas dinámicas
+                  con eventos en vivo, skins y constantes actualizaciones.
+                </p>
+                <p class="card-text">
+                  <small class="text-body fs-3">$189.99</small>
+                  <span class="text-body-secondary precio-detalle"
+                    >$209.99</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hijo-card-desc">
+          <div class="row g-0 h-100">
+            <div class="col-md-4">
+              <img
+                src="https://i.pinimg.com/originals/76/49/78/76497841d52fa3538522b1a79bd64df4.jpg"
+                class="img-fluid rounded-start item-img-desc"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-center texto-titulo-descrip">
+                  CSGO
+                </h5>
+                <p class="card-text text-center">
+                  (Counter-Strike: Global Offensive) es un shooter táctico en
+                  primera persona de Valve. Enfrenta a terroristas y
+                  antiterroristas en partidas por objetivos. Es conocido por su
+                  jugabilidad competitiva, precisión y escena profesional de
+                  eSports.
+                </p>
+                <p class="card-text">
+                  <small class="text-body fs-3">$89.99</small>
+                  <span class="text-body-secondary precio-detalle"
+                    >$109.99</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hijo-card-desc">
+          <div class="row g-0 h-100">
+            <div class="col-md-4">
+              <img
+                src="https://preview.redd.it/with-2025-upon-us-it-marks-the-20th-anniversary-of-god-of-v0-uelvb97fx1ae1.jpeg?width=640&crop=smart&auto=webp&s=86f54f2adeb9ccb5f3632a97c663014e7c6a2681"
+                class="img-fluid rounded-start item-img-desc"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-center texto-titulo-descrip">
+                  God Of War
+                </h5>
+                <p class="card-text text-center">
+                  Es un juego de acción y aventura de Santa Monica Studio. Sigue
+                  a Kratos, un guerrero espartano, en su viaje junto a su hijo
+                  Atreus por tierras mitológicas. Destaca por su narrativa
+                  profunda, combates intensos y entornos épicos.
+                </p>
+                <p class="card-text">
+                  <small class="text-body fs-3">$139.99</small>
+                  <span class="text-body-secondary precio-detalle"
+                    >$179.99</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hijo-card-desc">
+          <div class="row g-0 h-100">
+            <div class="col-md-4">
+              <img
+                src="https://www.pcmgames.com/wp-content/uploads/2024/07/NBA-2K25-Portada.webp"
+                class="img-fluid rounded-start item-img-desc"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-center texto-titulo-descrip">
+                  NBA 2K25
+                </h5>
+                <p class="card-text text-center">
+                  Es un simulador de básquet desarrollado por 2K Sports. Ofrece
+                  gráficos realistas, modos como Mi Carrera y Mi Equipo, y
+                  plantillas actualizadas con jugadores y equipos de la NBA.
+                  Ideal para fans del deporte y la competencia online.
+                </p>
+                <p class="card-text">
+                  <small class="text-body fs-3">$119.99</small>
+                  <span class="text-body-secondary precio-detalle"
+                    >$149.99</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECCION FOOTER -->
+    <footer class="footer">
+      <article class="cont-logo-footer">
+        <img src="./images/logopacman2.jpg.png" alt="" class="img-footer" />
+      </article>
+      <article class="cont-icono-footer">
+        <img
+          src="https://img.icons8.com/?size=100&id=118467&format=png&color=FFFFFF"
+          alt="Facebook"
+          class="img-icono-footer"
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=32309&format=png&color=FFFFFF"
+          alt="Instagram"
+          class="img-icono-footer"
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=FFFFFF"
+          alt="X"
+          class="img-icono-footer"
+        />
+      </article>
+      <article class="link-footer text-center">
+        <div>
+          <a href="./pages/nosotros.html" class="item-footer fs-3"
+            >Sobre Nosotros</a
+          >
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn fs-3 link-modal-footer"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Contactos
+          </button>
+        </div>
+      </article>
+    </footer>
+
+    <!-- Modal-Contacto -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -134,100 +669,75 @@
     </div>
 
     <!-- navbar de busqueda -->
-    <section class="buscador">
-      <div class="contenedor-search">
-        <div class="search-bar">
-          <input
-            type="text"
-            placeholder="busca aqui tu juego"
-            name="busqueda"
-          />
-          <button type="button" class="btn btn-outline-primary">🔎</button>
-        </div>
-      </div>
-    </section>
+    <h2>navbar de busqueda</h2>
+    <h2>Zona Juegos</h2>
+    <div class="lau">
+      <input type="text" placeholder="busca aqui tu juego" />
+    </div>
     <!-- Carousel -->
-    <section>
-      <div class="carrusel">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.RcR6aIZG5JzU5HvsyZ4yaAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            class="d-block w-100"
+            alt="gta san andreas"
+            width="500"
+            height="700"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-black fs-2">GTA SAN ANDREAS</h5>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://img.unocero.com/2019/09/grand-theft-auto-san-andreas-gratis-descargar-1-1.jpg"
-                class="d-block w-auto"
-                alt="gta san andreas"
-                height="700"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="text-white fs-2">GTA SAN ANDREAS</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://c.wallhere.com/photos/b1/39/Assassin's_Creed_Mirage_4K_Assassin's_Creed_Ubisoft_video_games_video_game_man_video_game_characters-2171817.jpg!d"
-                class="d-block w-auto"
-                alt="assassin's creed"
-                height="700"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="text-white fs-2">ASSASSIN'S CREED</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg"
-                class="d-block w-auto"
-                alt="minecraft"
-                height="700"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="text-white fs-2">MINECRAFT</h5>
-              </div>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.EngpSr6nHsmIsZsAfXJ4bwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            class="d-block w-100"
+            alt="assassin's creed"
+            width="500"
+            height="700"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white fs-2">ASSASSIN'S CREED</h5>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg"
+            class="d-block w-100"
+            alt="minecraft"
+            width="500"
+            height="700"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white fs-2">MINECRAFT</h5>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+
 
     <!-- SECCION DESCUENTOS -->
     <section class="cont-card-desc">
@@ -405,6 +915,7 @@
         </div>
       </div>
     </section>
+
     <section>
       <div class="container py-5">
         <!-- Título -->
@@ -467,10 +978,11 @@
       </div>
     </section>
 
+    <h2 class="text-center">Seccion Destacadas</h2>
     <div class="container">
       <section class="row row-cols-1 row-cols-md-2 row-col-lg-4 gap-4 my-4 p-4">
         <!-- TARJETA 1 -->
-        <div class="card mb-3" style="max-width: 18rem">
+        <div class="card mb-3 colortarjetas" style="max-width: 18rem">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtoIAiZC5QTHvKawK5E5pRexfBUEKiJQoIA&s"
             alt="imagen del juego Grand Theft Auto V"
@@ -484,7 +996,7 @@
           </div>
         </div>
         <!-- TARJETA 2  -->
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3 colortarjetas" style="width: 18rem">
           <img
             src="https://s03.s3c.es/imag/_v0/1200x655/d/9/e/ea-fc-25-fifa.jpg"
             alt="imagen del juego Fifa "
@@ -499,7 +1011,7 @@
         </div>
 
         <!-- TARJETA 3  -->
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3 colortarjetas" style="width: 18rem">
           <img
             src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1RLdppgLllgGZlkjuvHBu6/abbcf1e12935e4654a109324955a5087/RED_KEYART_STD_RGB_WW.jpg"
             alt="imagen del juego Assassin's Creed Shadows"
@@ -513,7 +1025,7 @@
           </div>
         </div>
         <!-- TARJETA 4 -->
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3 colortarjetas" style="width: 18rem">
           <img
             src="https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b"
             alt="imagen del juego  League of Legends "
@@ -526,7 +1038,7 @@
           </div>
         </div>
         <!-- TARJETA 5 -->
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3 colortarjetas" style="width: 18rem">
           <img
             src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000010192/f26fc9e1b11ce01369966ed9225e320a293c4eaad1329774f125e05629ffd437"
             alt="imagen del juego Fornite"
@@ -539,8 +1051,7 @@
           </div>
         </div>
         <!-- TARJETA 6  -->
-
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3 colortarjetas" style="width: 18rem">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcXT8ddSbjjLw9IakVCfgNy5T1TuMKTizZw&s"
             alt="imagen del juego  Counter-Strike"
@@ -555,7 +1066,7 @@
         </div>
         <!-- TARJETA 7 -->
 
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3 colortarjetas" style="width: 18rem">
           <img
             src="https://image.api.playstation.com/vulcan/ap/rnd/202503/2819/346190abf755e3883d1353fbc8d8ccb7e1acf076f1138d6b.jpg"
             alt="imagen del juego Call of Duty"
@@ -569,7 +1080,7 @@
           </div>
         </div>
         <!-- TARJETA 8 -->
-        <div class="card mb-3" style="width: 18rem">
+        <div class="card mb-3 colortarjetas" style="width: 18rem">
           <img
             src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1665460/921fc2c1953dfcb27cf31a845e4da4015c78edc7/capsule_616x353.jpg?t=1750996206"
             alt="imagen del juego eFootball"
@@ -584,7 +1095,6 @@
         </div>
       </section>
     </div>
-
     <!-- links de boostrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
