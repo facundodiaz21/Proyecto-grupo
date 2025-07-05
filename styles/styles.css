@@ -67,7 +67,6 @@
     background-color: var(--color-prueba1);
   }
 }
-
 .lau {
   display: flex;
   justify-content: center;
@@ -116,6 +115,9 @@
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
+}
+.colortarjetas {
+  background-color: var(--color-prueba4);
 }
 /* carrusel */
 .carrusel {
@@ -280,4 +282,3 @@ body {
       .category-link {
         text-decoration: none;
       }
-
