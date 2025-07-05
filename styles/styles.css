@@ -59,13 +59,11 @@
 }
 .boton-modal {
   background-color: var(--color-prueba1);
-  transition: all 0.5s ease ;
+  transition: all 0.5s ease;
   &:hover {
     background-color: var(--color-prueba1);
   }
 }
-
-
 .lau {
   display: flex;
   justify-content: center;
@@ -103,4 +101,13 @@
   .item-img-desc {
     height: 100%;
   }
+}
+/* Css de Mateo */
+.contenedor-item {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.colortarjetas {
+  background-color: var(--color-prueba4);
 }
