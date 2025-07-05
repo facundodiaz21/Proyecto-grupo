@@ -87,3 +87,7 @@
     background-color: var(--color-prueba3);
   }
 }
+/* fondo de la pag */
+body {
+  background-color: var(--color-prueba3);
+}
