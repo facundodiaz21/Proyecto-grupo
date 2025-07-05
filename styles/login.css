@@ -91,3 +91,19 @@
 body {
   background-color: var(--color-prueba3);
 }
+.titulo {
+  background-color: var(--color-prueba1);
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  a {
+    text-decoration: none;
+  }
+  span {
+    color: #d4af37;
+  }
+}
