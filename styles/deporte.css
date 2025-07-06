@@ -58,6 +58,11 @@
       .badge-pc {
         background-color: #198754;
       }
+      .iconos-plataformas {
+  display: flex;
+  gap: 8px; /* o el valor que quieras */
+  flex-wrap: wrap;
+}
 
       .etiqueta {
         font-size: 0.75rem;
