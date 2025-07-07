@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
-/* *{
-  border: 1px solid red;
-} */
+
 :root {
   --color-primario: #7952b3;
   --color-secundario: #5e3f8e;
   --primer-fuente: "Open Sans", sans-serif;
+  --fuente-texto-descrip: "Permanent Marker", cursive;  
   --color-prueba1: #192338;
   --color-prueba2: #1e2e4f;
   --color-prueba3: #31487a;
@@ -18,12 +17,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  color: #ffff;
-  /* font-weight: 400;
-  font-style: normal; */
 }
-
+body{
+  background-color: var(--color-prueba2);
+}
 /* NUEVO NAVBAR */
 .cont-navbar {
   /* border: 2px solid red; */
@@ -381,11 +378,6 @@
 }
 
 /* SECCION CATEGORIAS POR OCTAVIO */
-body {
-  background-color: #f8f9fa; /* Fondo claro */
-  color: #212529; /* Texto principal */
-}
-
 .category-card {
   background-color: #1e2e4f;
   border: 2px solid #6c757d; /* Borde gris medio */
