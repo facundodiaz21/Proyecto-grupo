@@ -15,52 +15,61 @@
   </head>
   <body>
     <!-- HEADER Y NAVBAR -->
-    <nav class="navbar navbar-expand-lg fondo-barra">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-          <ul class="navbar-nav barra-item">
-            <li class="nav-item">
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn text-white item-nav"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Contactos
-              </button>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white btn item-nav"
-                href="./pages/nosotros.html"
-                >Sobre Nosotros</a
-              >
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg cont-navbar p-0">
+        <!-- TITULO Y LOGO -->
+        <div class="cont-cabecera">
+          <h1 class="titulo-cabecera">
+            I<span class="titulo-cabecera"> C</span>
+          </h1>
+          <div class="cont-logo-cabecera">
+            <img
+              src="images/logopacman2.jpg.png"
+              alt=" logo de pacman"
+              class="logo"
+            />
+          </div>
+
         </div>
-        <div class="caja1">
-          <img
-            src="images/logopacman2.jpg.png"
-            alt=" logo de pacman"
-            class="fondo-logo"
-          />
+        <!-- LINKS DEL NAVBAR -->
+        <div class="container contenedor-prueba">
+          <div class="navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav link-cabecera">
+              <li class="item-padre p-1">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn text-white item-hijo p-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Contactos
+                </button>
+              </li>
+              <li class="item-padre p-1">
+                <a
+                  class="nav-link text-white p-0 btn item-hijo"
+                  href="./pages/nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="item-padre p-1">
+                <a class="nav-link p-0 text-white item-hijo" href="./pages/login.html">Login</a>
+              </li>
+              <li class="item-padre p-1">
+                <a class="nav-link p-0" aria-current="page" href="#"
+                  ><img
+                    src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
+                    alt="carro de compras"
+                    class="logo-compras"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="navbar-nav barra-item">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#"
-              ><img
-                src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
-                alt="carro de compras"
-                class="logo-compras"
-            /></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./pages/login.html">Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
 
     <main>
       <!-- navbar de busqueda -->
@@ -250,7 +259,6 @@
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcXT8ddSbjjLw9IakVCfgNy5T1TuMKTizZw&s"
               alt="imagen del juego  Counter-Strike"
                          class="img-card-destacada"
-
             />
             <div class="card-body">
               <p class="text-center">
@@ -303,6 +311,7 @@
                 Clash Royale es un videojuego de estrategia en línea para
                 dispositivos móviles, creado por la compañía finlandesa
                 Supercell.​ Fue lanzado globalmente el 2 de marzo de 2016.​
+
               </p>
             </div>
           </div>
@@ -346,7 +355,7 @@
             </div>
             <!-- Aventura -->
             <div class="col-6 col-md-3">
-              <a href="" class="category-link">
+              <a href="./pages/Error404.html" class="category-link">
                 <div class="category-card">
                   <img
                     src="./images/ChatGPT_Image_3_jul_2025__08_05_15_p.m.-removebg-preview.png"
@@ -359,7 +368,7 @@
 
             <!-- Acción -->
             <div class="col-6 col-md-3">
-              <a href="" class="category-link">
+              <a href="./pages/Error404.html" class="category-link">
                 <div class="category-card">
                   <img
                     src="./images/ChatGPT_Image_3_jul_2025__08_20_01_p.m.-removebg-preview.png"
