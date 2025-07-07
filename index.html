@@ -15,50 +15,59 @@
   </head>
   <body>
     <!-- HEADER Y NAVBAR -->
-    <nav class="navbar navbar-expand-lg fondo-barra">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-          <ul class="navbar-nav barra-item ">
-            <li class="nav-item">
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn text-white item-nav"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Contactos
-              </button>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white btn item-nav" href="./pages/nosotros.html"
-                >Sobre Nosotros</a
-              >
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg cont-navbar p-0">
+        <!-- TITULO Y LOGO -->
+        <div class="cont-cabecera">
+          <h1 class="titulo-cabecera">
+            I<span class="titulo-cabecera"> C</span>
+          </h1>
+          <div class="cont-logo-cabecera">
+            <img
+              src="images/logopacman2.jpg.png"
+              alt=" logo de pacman"
+              class="logo"
+            />
+          </div>
         </div>
-        <div class="caja1">
-          <img
-            src="images/logopacman2.jpg.png"
-            alt=" logo de pacman"
-            class="fondo-logo"
-          />
+        <!-- LINKS DEL NAVBAR -->
+        <div class="container contenedor-prueba">
+          <div class="navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav link-cabecera">
+              <li class="item-padre p-1">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn text-white item-hijo p-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Contactos
+                </button>
+              </li>
+              <li class="item-padre p-1">
+                <a
+                  class="nav-link text-white p-0 btn item-hijo"
+                  href="./pages/nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="item-padre p-1">
+                <a class="nav-link p-0 text-white item-hijo" href="#">Login</a>
+              </li>
+              <li class="item-padre p-1">
+                <a class="nav-link p-0" aria-current="page" href="#"
+                  ><img
+                    src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
+                    alt="carro de compras"
+                    class="logo-compras"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="navbar-nav barra-item">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#"
-              ><img
-                src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
-                alt="carro de compras"
-                class="logo-compras"
-            /></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- Modal -->
     <div
@@ -68,10 +77,12 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog ">
+      <div class="modal-dialog">
         <div class="modal-content fondo-modal">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Contactos</h1>
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">
+              Contactos
+            </h1>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -82,7 +93,9 @@
           <div class="modal-body">
             <form class="row g-3 needs-validation" novalidate>
               <div class="mb-3">
-                <label for="validationCustomUsername" class="form-label text-white"
+                <label
+                  for="validationCustomUsername"
+                  class="form-label text-white"
                   >Email:</label
                 >
                 <div class="input-group has-validation">
@@ -117,7 +130,9 @@
                 </div>
               </div>
               <div class="boton-form">
-                <button type="submit" class="btn text-white  boton-modal">Enviar</button>
+                <button type="submit" class="btn text-white boton-modal">
+                  Enviar
+                </button>
               </div>
             </form>
           </div>
@@ -125,93 +140,93 @@
       </div>
     </div>
 
-      <!-- navbar de busqueda -->
-      <h2>navbar de busqueda</h2>
-      <h2>Zona Juegos</h2>
-      <div class="lau">
-        <input type="text" placeholder="busca aqui tu juego" />
-      </div>
-      <!-- Carousel -->
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="https://tse2.mm.bing.net/th/id/OIP.RcR6aIZG5JzU5HvsyZ4yaAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              class="d-block w-100"
-              alt="gta san andreas"
-              width="500"
-              height="700"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-black fs-2">GTA SAN ANDREAS</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://tse2.mm.bing.net/th/id/OIP.EngpSr6nHsmIsZsAfXJ4bwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-              class="d-block w-100"
-              alt="assassin's creed"
-              width="500"
-              height="700"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-white fs-2">ASSASSIN'S CREED</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg"
-              class="d-block w-100"
-              alt="minecraft"
-              width="500"
-              height="700"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-white fs-2">MINECRAFT</h5>
-            </div>
-          </div>
-        </div>
+    <!-- navbar de busqueda -->
+    <h2>navbar de busqueda</h2>
+    <h2>Zona Juegos</h2>
+    <div class="lau">
+      <input type="text" placeholder="busca aqui tu juego" />
+    </div>
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
         <button
-          class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
         <button
-          class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.RcR6aIZG5JzU5HvsyZ4yaAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            class="d-block w-100"
+            alt="gta san andreas"
+            width="500"
+            height="700"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-black fs-2">GTA SAN ANDREAS</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP.EngpSr6nHsmIsZsAfXJ4bwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            class="d-block w-100"
+            alt="assassin's creed"
+            width="500"
+            height="700"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white fs-2">ASSASSIN'S CREED</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg"
+            class="d-block w-100"
+            alt="minecraft"
+            width="500"
+            height="700"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white fs-2">MINECRAFT</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!-- links de boostrap -->
 
     <script
