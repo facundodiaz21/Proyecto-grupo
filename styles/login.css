@@ -13,7 +13,6 @@
   color: black;
   display: flex;
   justify-content: center;
- 
 }
 .titulo span {
   color: rgb(255, 255, 2);
@@ -170,5 +169,16 @@ header {
     display: flex;
     justify-content: space-between;
     width: 250px;
+  }
+}
+/*  MODAL */
+.fondo-modal {
+  background-color: var(--color-prueba2);
+}
+.boton-modal {
+  background-color: var(--color-prueba1);
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: var(--color-prueba1);
   }
 }
