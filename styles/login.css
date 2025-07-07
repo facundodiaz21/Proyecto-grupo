@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .login {
-  margin-top: 150px;
+  margin-top: 75px;
   display: flex;
   justify-content: center;
   color: white;
@@ -52,58 +52,15 @@
 .fondo-barra {
   background-color: var(--color-prueba1);
 }
-.fondo-logo {
-  width: 300px;
-  height: 60px;
-  object-fit: cover;
-  /* border: 2px solid green; */
-}
-.logo-compras {
-  width: 30px;
-  height: 30px;
-  object-fit: cover;
-}
-.color-fondo-contactos {
-  background-color: var(--color-primario);
-}
-.boton-form {
-  display: flex;
-  justify-content: end;
-}
-.tamaño-textarea {
-  min-height: 100px;
-  max-height: 100px;
-}
-.nav-item {
-  height: 38px;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: var(--color-prueba3);
-  }
-}
-.item-nav {
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: var(--color-prueba3);
-  }
-}
+
 /* fondo de la pag */
 body {
   background-color: var(--color-prueba3);
 }
-.titulo {
-  background-color: var(--color-prueba1);
-
-  text-align: center;
+.logo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 5px;
-
-  a {
-    text-decoration: none;
-  }
-  span {
-    color: #d4af37;
-  }
+}
+header {
+  background-color: var(--color-prueba1);
 }
