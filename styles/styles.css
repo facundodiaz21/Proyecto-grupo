@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
 :root {
   --color-primario: #7952b3;
@@ -9,6 +10,7 @@
   --color-prueba3: #31487a;
   --color-prueba4: #8fb3e2;
   --color-prueba5: #d9e1f1;
+  --fuente-texto-descrip: "Permanent Marker", cursive;
 }
 * {
   margin: 0;
@@ -167,8 +169,8 @@
   }
 }
 
-.lau {
-  display: flex;
-  justify-content: center;
-  border: 4px solid mediumslateblue;
-}
+
+.lau{ display: flex;
+justify-content: center;
+border: 4px solid mediumslateblue;}
+
