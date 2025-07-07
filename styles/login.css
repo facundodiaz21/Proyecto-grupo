@@ -64,3 +64,8 @@ body {
 header {
   background-color: var(--color-prueba1);
 }
+.regreso {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
