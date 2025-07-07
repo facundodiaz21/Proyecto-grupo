@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-     }
+      }
 
       .card:hover {
         transform: scale(1.05);
@@ -34,17 +34,17 @@
 
       .card-text {
         color: #ced4da;
-         min-height: 85px;
+        min-height: 85px;
       }
       .game-desc {
-  height: 50px;      /* <-- Fijás la altura exacta */
-  overflow: hidden;  /* Oculta el texto sobrante si se pasa */
-  text-overflow: ellipsis;
-}
+        height: 50px;      
+        overflow: hidden; 
+        text-overflow: ellipsis;
+      }
       .game-img {
-  height: 150px;
-  object-fit: cover;
-}
+       height: 150px;
+       object-fit: cover;
+      }
       .badge-plataforma {
         font-size: 0.8rem;
         padding: 4px 8px;
@@ -57,6 +57,11 @@
 
       .badge-pc {
         background-color: #198754;
+      }
+      .iconos-plataformas {
+        display: flex;
+        gap: 8px; 
+        flex-wrap: wrap;
       }
 
       .etiqueta {
