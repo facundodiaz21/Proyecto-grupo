@@ -140,14 +140,11 @@
 }
 
 /* SECCION CATEGORIAS POR OCTAVIO */
-body {
-        background-color: #f8f9fa; /* Fondo claro */
-        color: #212529; /* Texto principal */
-      }
+
 
       .category-card {
-        background-color: #1e2e4f;
-        border: 2px solid #6c757d; /* Borde gris medio */
+        background-color:   #31487a;
+        border: 2px solid #ffffff; /* Borde gris medio */
         border-radius: 12px;
         text-align: center;
         padding: 20px;
@@ -157,7 +154,7 @@ body {
 
       .category-card:hover {
         transform: scale(1.05);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.958);
       }
 
       .category-card img {
