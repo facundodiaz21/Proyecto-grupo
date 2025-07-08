@@ -24,15 +24,22 @@ body {
   background-color: var(--color-prueba3);
 }
 .header {
+  border: 2px solid red;
   margin-bottom: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 950px;
+}
+h1{
+  text-align: center;
+  border: 2px solid black;
+  margin: 10px auto;
 }
 .navbar {
   background-color: var(--color-prueba1);
-
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -50,7 +57,7 @@ body {
   width: 100px;
 }
 .main {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -94,6 +101,7 @@ body {
 }
 .decision {
   background-color: var(--color-prueba1);
+  width: 800px;
   border-radius: 2px 30px;
   text-align: center;
   margin: 30px 20px;
