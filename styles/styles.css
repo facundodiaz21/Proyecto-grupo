@@ -181,8 +181,8 @@ body{
   margin: 10px;
   /* border: 2px solid black; */
   border-radius: 25px 10px;
-  background-color: blue;
-  box-shadow: 2px 2px 2px 2px black;
+  background-color: var(--color-prueba1);
+  box-shadow: 2px 2px 2px 2px var(--color-prueba4);
   width: 95%;
   margin: 15px auto;
   padding: 5px;
@@ -269,6 +269,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 10px;
   }
   .hijo-card-desc {
     height: 400px;
