@@ -259,7 +259,18 @@ body {
     margin: 0;
     /* padding: 20px; */
   }
-   .link-footer {
+  .link-footer {
     flex-direction: column;
+  }
+}
+/* MODIFICACIONES MODAL */
+.fondo-modal {
+  background-color: var(--color-prueba2);
+}
+.boton-modal {
+  background-color: var(--color-prueba1);
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: var(--color-prueba1);
   }
 }
