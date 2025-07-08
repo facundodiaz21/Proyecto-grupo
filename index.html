@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon3.png"
+      type="image/x-icon"
+    />
     <title>Insert Coin</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link
@@ -15,52 +20,63 @@
   </head>
   <body>
     <!-- HEADER Y NAVBAR -->
-    <nav class="navbar navbar-expand-lg fondo-barra">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-          <ul class="navbar-nav barra-item">
-            <li class="nav-item">
-              <!-- Button trigger modal -->
-              <button
-                type="button"
-                class="btn text-white item-nav"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Contactos
-              </button>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white btn item-nav"
-                href="./pages/nosotros.html"
-                >Sobre Nosotros</a
-              >
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg cont-navbar p-0">
+        <!-- TITULO Y LOGO -->
+        <div class="cont-cabecera">
+          <h1 class="titulo-cabecera text-white">
+            I<span class="titulo-cabecera"> C</span>
+          </h1>
+          <div class="cont-logo-cabecera">
+            <img
+              src="images/logopacman2.jpg.png"
+              alt=" logo de pacman"
+              class="logo"
+            />
+          </div>
         </div>
-        <div class="caja1">
-          <img
-            src="images/logopacman2.jpg.png"
-            alt=" logo de pacman"
-            class="fondo-logo"
-          />
+        <!-- LINKS DEL NAVBAR -->
+        <div class="container contenedor-prueba">
+          <div class="navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav link-cabecera">
+              <li class="item-padre p-1">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn text-white item-hijo p-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Contactos
+                </button>
+              </li>
+              <li class="item-padre p-1">
+                <a
+                  class="nav-link text-white p-0 btn item-hijo"
+                  href="./pages/nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="item-padre p-1">
+                <a
+                  class="nav-link p-0 text-white item-hijo"
+                  href="./pages/login.html"
+                  >Login</a
+                >
+              </li>
+              <li class="item-padre p-1">
+                <a class="nav-link p-0" aria-current="page" href="./pages/Error404.html"
+                  ><img
+                    src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
+                    alt="carro de compras"
+                    class="logo-compras"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="navbar-nav barra-item">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#"
-              ><img
-                src="https://img.icons8.com/?size=100&id=59997&format=png&color=FFFFFF"
-                alt="carro de compras"
-                class="logo-compras"
-            /></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="./pages/login.html">Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <main>
       <!-- navbar de busqueda -->
@@ -399,7 +415,7 @@
       <section>
         <div class="container py-5">
           <!-- Título -->
-          <h2 class="text-center fw-bold text-dark mb-5">
+          <h2 class="text-center fw-bold text-white mb-5">
             Sección de Categoría
           </h2>
 
@@ -433,7 +449,7 @@
             </div>
             <!-- Aventura -->
             <div class="col-6 col-md-3">
-              <a href="" class="category-link">
+              <a href="./pages/Error404.html" class="category-link">
                 <div class="category-card">
                   <img
                     src="./images/ChatGPT_Image_3_jul_2025__08_05_15_p.m.-removebg-preview.png"
@@ -446,7 +462,7 @@
 
             <!-- Acción -->
             <div class="col-6 col-md-3">
-              <a href="" class="category-link">
+              <a href="./pages/Error404.html" class="category-link">
                 <div class="category-card">
                   <img
                     src="./images/ChatGPT_Image_3_jul_2025__08_20_01_p.m.-removebg-preview.png"
@@ -459,23 +475,33 @@
           </div>
         </div>
       </section>
+
       <!-- SECCION DESCUENTOS -->
+      <!-- TITULO -->
+      <div class="titulos-descuentos">
+        <h2>Juegos con descuentos</h2>
+        <p class="m-0">
+          En esta seccion encontraras los juegos más buscados y en descuentos,
+          para que tambien puedas disfrutar de ellos.
+        </p>
+      </div>
       <section class="cont-card-desc">
+        <!-- GTA V -->
         <div class="card hijo-card-desc">
           <div class="row g-0 h-100">
-            <div class="col-md-4">
+            <div class="col-md-4 cont-img-descuentos">
               <img
                 src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/el-remaster-de-gta-v-para-one-y-ps4-llega-el-18-de-noviembre/18311506-1-esl-ES/El-remaster-de-GTA-V-para-One-y-PS4-llega-el-18-de-noviembre.png"
                 class="img-fluid rounded-start item-img-desc"
-                alt="..."
+                alt="imagen gta v"
               />
             </div>
-            <div class="col-md-8">
-              <div class="card-body h-100">
+            <div class="col-md-8 cont-cardbody">
+              <div class="card-body">
                 <h5 class="card-title text-center texto-titulo-descrip">
                   Grand Thef Auto V
                 </h5>
-                <p class="card-text text-center">
+                <p class="card-text text-center m-0">
                   Es un videojuego de mundo abierto de Rockstar Games,
                   ambientado en la ciudad ficticia de Los Santos. Sigue a tres
                   protagonistas —Michael, Franklin y Trevor— en misiones de
@@ -492,22 +518,22 @@
             </div>
           </div>
         </div>
-
+        <!-- FIFA -->
         <div class="card hijo-card-desc">
           <div class="row g-0 h-100">
-            <div class="col-md-4">
+            <div class="col-md-4 cont-img-descuentos">
               <img
                 src="https://www.clarin.com/img/2024/07/17/ORRRfEnDj_600x600__1.jpg"
                 class="img-fluid rounded-start item-img-desc"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 cont-cardbody">
               <div class="card-body">
                 <h5 class="card-title text-center texto-titulo-descrip">
                   FIFA 2025
                 </h5>
-                <p class="card-text text-center">
+                <p class="card-text text-center m-0">
                   Es un videojuego de fútbol de EA Sports que ofrece una
                   experiencia realista con mejoras en gráficos, jugabilidad y
                   modos como Carrera y Ultimate Team. Incluye licencias
@@ -523,22 +549,22 @@
             </div>
           </div>
         </div>
-
+        <!-- FORNITE -->
         <div class="card hijo-card-desc">
-          <div class="row g-0">
-            <div class="col-md-4">
+          <div class="row g-0 h-100">
+            <div class="col-md-4 cont-img-descuentos">
               <img
                 src="https://acid.la/wp-content/uploads/2022/06/FORTNITE-PORTADA.jpg"
                 class="img-fluid rounded-start h-100 item-img-desc"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 cont-cardbody">
               <div class="card-body">
                 <h5 class="card-title text-center texto-titulo-descrip">
                   Fornite
                 </h5>
-                <p class="card-text text-center">
+                <p class="card-text text-center m-0">
                   Es un videojuego multijugador de Epic Games que combina
                   acción, construcción y supervivencia. Su modo más popular,
                   Battle Royale, enfrenta a 100 jugadores en partidas dinámicas
@@ -554,22 +580,22 @@
             </div>
           </div>
         </div>
-
+        <!-- CSGO -->
         <div class="card hijo-card-desc">
           <div class="row g-0 h-100">
-            <div class="col-md-4">
+            <div class="col-md-4 cont-img-descuentos">
               <img
                 src="https://i.pinimg.com/originals/76/49/78/76497841d52fa3538522b1a79bd64df4.jpg"
                 class="img-fluid rounded-start item-img-desc"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 cont-cardbody">
               <div class="card-body">
                 <h5 class="card-title text-center texto-titulo-descrip">
                   CSGO
                 </h5>
-                <p class="card-text text-center">
+                <p class="card-text text-center m-0">
                   (Counter-Strike: Global Offensive) es un shooter táctico en
                   primera persona de Valve. Enfrenta a terroristas y
                   antiterroristas en partidas por objetivos. Es conocido por su
@@ -586,22 +612,22 @@
             </div>
           </div>
         </div>
-
+        <!-- GOD OF WAR -->
         <div class="card hijo-card-desc">
           <div class="row g-0 h-100">
-            <div class="col-md-4">
+            <div class="col-md-4 cont-img-descuentos">
               <img
                 src="https://preview.redd.it/with-2025-upon-us-it-marks-the-20th-anniversary-of-god-of-v0-uelvb97fx1ae1.jpeg?width=640&crop=smart&auto=webp&s=86f54f2adeb9ccb5f3632a97c663014e7c6a2681"
                 class="img-fluid rounded-start item-img-desc"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 cont-cardbody">
               <div class="card-body">
                 <h5 class="card-title text-center texto-titulo-descrip">
                   God Of War
                 </h5>
-                <p class="card-text text-center">
+                <p class="card-text text-center m-0">
                   Es un juego de acción y aventura de Santa Monica Studio. Sigue
                   a Kratos, un guerrero espartano, en su viaje junto a su hijo
                   Atreus por tierras mitológicas. Destaca por su narrativa
@@ -617,22 +643,22 @@
             </div>
           </div>
         </div>
-
+        <!-- NBA -->
         <div class="card hijo-card-desc">
           <div class="row g-0 h-100">
-            <div class="col-md-4">
+            <div class="col-md-4 cont-img-descuentos">
               <img
                 src="https://www.pcmgames.com/wp-content/uploads/2024/07/NBA-2K25-Portada.webp"
                 class="img-fluid rounded-start item-img-desc"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 cont-cardbody">
               <div class="card-body">
                 <h5 class="card-title text-center texto-titulo-descrip">
                   NBA 2K25
                 </h5>
-                <p class="card-text text-center">
+                <p class="card-text text-center m-0">
                   Es un simulador de básquet desarrollado por 2K Sports. Ofrece
                   gráficos realistas, modos como Mi Carrera y Mi Equipo, y
                   plantillas actualizadas con jugadores y equipos de la NBA.

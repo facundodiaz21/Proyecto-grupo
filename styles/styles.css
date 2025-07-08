@@ -1,36 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
-/* *{
-  border: 1px solid red;
-} */
+
 :root {
   --color-primario: #7952b3;
   --color-secundario: #5e3f8e;
   --primer-fuente: "Open Sans", sans-serif;
+  --fuente-texto-descrip: "Permanent Marker", cursive;  
   --color-prueba1: #192338;
   --color-prueba2: #1e2e4f;
   --color-prueba3: #31487a;
   --color-prueba4: #8fb3e2;
   --color-prueba5: #d9e1f1;
-  --fuente-texto-descrip: "Permanent Marker", cursive;
 }
-.barra-item {
-  font-family: "Open Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.fondo-barra {
+/* COLOR DEL BODY */
+body{
+  background-color: var(--color-prueba2);
+}
+/* NUEVO NAVBAR */
+.cont-navbar {
+  /* border: 2px solid red; */
   background-color: var(--color-prueba1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 250px; */
+  text-align: center;
+  font-family: "Share Tech", sans-serif;
+  a {
+    text-decoration: none;
+  }
+  span {
+    color: #d4af37;
+  }
 }
-.fondo-logo {
-  width: 300px;
-  height: 60px;
-  object-fit: cover;
+.cont-cabecera {
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 110px;
+  width: 250px;
+  .cont-logo-cabecera {
+    height: 100%;
+    width: 200px;
+  }
+  .logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .titulo-cabecera {
+    font-weight: bold;
+    font-size: 40px;
+  }
+}
+.link-cabecera {
   /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 100px; */
+  width: 375px;
 }
 .logo-compras {
   width: 30px;
   height: 30px;
   object-fit: cover;
 }
+.contenedor-prueba {
+  /* border: 2px solid yellow; */
+  /* height: 100px; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-padre {
+  /* border: 2px solid red; */
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  &:hover {
+    background-color: var(--color-prueba3);
+  }
+  .item-hijo {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+  }
+}
+/* MEDIASQUERIES */
+/* MEDIDA TABLETS */
+@media (min-width: 768px) {
+  .cont-cabecera {
+    justify-content: space-around;
+    gap: 5px;
+    width: 350px;
+  }
+  .link-cabecera {
+    margin: auto;
+    justify-content: space-evenly;
+    width: 330px;
+  }
+  .cont-logo-cabecera {
+    height: 100%;
+    width: 350px;
+  }
+  .item-hijo {
+    font-size: 30px;
+  }
+}
+/* MEDIDA DESKTOP */
+@media (min-width: 1024px) {
+  .cont-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contenedor-prueba {
+    width: 330px;
+  }
+  .cont-cabecera {
+    width: 650px;
+    margin: 0px 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cont-logo-cabecera {
+    width: 300px;
+  }
+  .titulo-cabecera {
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .item-hijo {
+    font-size: 20px;
+  }
+}
+
 .color-fondo-contactos {
   background-color: var(--color-primario);
 }
@@ -41,19 +155,6 @@
 .tamaño-textarea {
   min-height: 100px;
   max-height: 100px;
-}
-.nav-item {
-  height: 38px;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: var(--color-prueba3);
-  }
-}
-.item-nav {
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: var(--color-prueba3);
-  }
 }
 
 /* MODIFICACIONES MODAL */
@@ -74,6 +175,21 @@
 }
 
 /* SECCION DESCUENTOS */
+.titulos-descuentos {
+  color: white;
+  text-align: center;
+  margin: 10px;
+  /* border: 2px solid black; */
+  border-radius: 25px 10px;
+  background-color: var(--color-prueba1);
+  box-shadow: 2px 2px 2px 2px var(--color-prueba4);
+  width: 95%;
+  margin: 15px auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .precio-detalle {
   text-decoration: line-through;
 }
@@ -84,32 +200,95 @@
 }
 .cont-card-desc {
   /* border: 2px solid black; */
-  margin: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   /* width: 100%; */
 }
-.item-img-desc {
-  height: 300px;
-  object-fit: cover;
-  width: 100%;
+.hijo-card-desc {
+  /* border: 2px solid red; */
+  height: 550px;
 }
+.cont-cardbody {
+  height: 45%;
+  /* border: 2px solid blue; */
+}
+.card-body {
+  /* border: 2px solid green; */
+  height: 100%;
+  padding: 3px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cont-img-descuentos {
+  /* border: 2px solid yellow; */
+  height: 55%;
+  .item-img-desc {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 /* MEDIAQUERIES */
 @media (min-width: 768px) {
   .cont-card-desc {
+    margin: 5px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-direction: column;
+    gap: 10px;
   }
-  /* .padre-card-desc {
-    width: 100%;
-  } */
   .hijo-card-desc {
-    width: 48%;
+    height: 300px;
   }
-  .item-img-desc {
+  .cont-img-descuentos {
     height: 100%;
   }
+  .cont-cardbody {
+    height: 100%;
+  }
+  .card-body {
+    padding: 8px;
+    justify-content: space-between;
+  }
+  .texto-titulo-descrip {
+    font-family: var(--fuente-texto-descrip);
+    font-size: 1.5em;
+  }
+  .card-text {
+    font-size: 1.3em;
+  }
+  .titulos-descuentos {
+    width: 90%;
+  }
 }
+@media (min-width: 1024px) {
+  .cont-card-desc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .hijo-card-desc {
+    height: 400px;
+    width: 49.5%;
+  }
+  .cont-img-descuentos {
+    height: 100%;
+    .item-img-desc {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .titulos-descuentos {
+    width: 70%;
+  }
+}
+
+
 /* Css de Mateo */
 .contenedor-item {
   margin: 20px;
@@ -126,6 +305,14 @@
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   display: block;
+}
+/* Imagen de las tarjetas */
+.img-card-destacada {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+
 }
 /* carrusel */
 .carrusel {
@@ -279,14 +466,9 @@
 }
 
 /* SECCION CATEGORIAS POR OCTAVIO */
-body {
-  background-color: #f8f9fa; /* Fondo claro */
-  color: #212529; /* Texto principal */
-}
-
 .category-card {
-  background-color: #1e2e4f;
-  border: 2px solid #6c757d; /* Borde gris medio */
+  background-color:#31487a;
+  border: 2px solid #ffffff; 
   border-radius: 12px;
   text-align: center;
   padding: 20px;
@@ -296,7 +478,7 @@ body {
 
 .category-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgb(255, 255, 255);
 }
 
 .category-card img {
@@ -307,7 +489,7 @@ body {
 
 .category-title {
   font-weight: bold;
-  color: #ffffff; /* Branding principal púrpura */
+  color: #ffffff; 
 }
 
 .category-link {
