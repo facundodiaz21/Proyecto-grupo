@@ -208,6 +208,7 @@ body{
 }
 .hijo-card-desc {
   /* border: 2px solid red; */
+  background-color: var(--color-prueba5);
   height: 550px;
 }
 .cont-cardbody {
