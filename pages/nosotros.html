@@ -150,6 +150,77 @@
         </div>
       </article>
     </footer>
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content fondo-modal">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">
+              Contactos
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="mb-3">
+                <label
+                  for="validationCustomUsername"
+                  class="form-label text-white"
+                  >Email:</label
+                >
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    placeholder="Rolling@gmail.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese un email valido.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control tamaño-textarea"
+                    id="floatingTextarea2"
+                    placeholder="Por favor escriba aqui su comentario..."
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un comentario valido.
+                  </div>
+                  <label for="floatingTextarea2"
+                    >Por favor escriba aqui su comentario...</label
+                  >
+                </div>
+              </div>
+              <div class="boton-form">
+                <button type="submit" class="btn text-white boton-modal">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
