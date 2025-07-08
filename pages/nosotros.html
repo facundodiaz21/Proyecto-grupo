@@ -16,14 +16,16 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <a href="../index.html"
-          ><h1>Insert <span>Coin</span></h1></a
-        >
-        <img src="../images/logo-pacman.png.png" alt="logo" class="logo" />
+        <div class="hijo-navbar">
+          <a href="../index.html"
+            ><h1>Insert <span>Coin</span></h1></a
+          >
+          <img src="../images/logo-pacman.png.png" alt="logo" class="logo" />
+        </div>
+        <a class="btn-volver" href="../index.html">Volver a inicio</a>
       </nav>
-      <h1>¿Quienes somos?</h1>
     </header>
-
+    <h1 class="text-center text-white">¿Quienes somos?</h1>
     <main class="main w-100 m-0 p-0">
       <div class="nosotros row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
@@ -106,6 +108,150 @@
         </p>
       </article>
     </section>
+
+    <footer class="footer">
+      <article class="cont-logo-footer">
+        <img src="../images/logopacman2.jpg.png" alt="" class="img-footer" />
+      </article>
+      <article class="cont-icono-footer">
+        <img
+          src="https://img.icons8.com/?size=100&id=118467&format=png&color=FFFFFF"
+          alt="Facebook"
+          class="img-icono-footer"
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=32309&format=png&color=FFFFFF"
+          alt="Instagram"
+          class="img-icono-footer"
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=FFFFFF"
+          alt="X"
+          class="img-icono-footer"
+        />
+      </article>
+      <article class="link-footer text-center">
+        <div>
+          <a href="../pages/nosotros.html" class="item-footer fs-3"
+            >Sobre Nosotros</a
+          >
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn fs-3 link-modal-footer"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Contactos
+          </button>
+        </div>
+        <div>
+          <p class="copy-footer">&copy;Insert Coin-2025</p>
+        </div>
+      </article>
+    </footer>
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content fondo-modal">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">
+              Contactos
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="mb-3">
+                <label
+                  for="validationCustomUsername"
+                  class="form-label text-white"
+                  >Email:</label
+                >
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    placeholder="Rolling@gmail.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese un email valido.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control tamaño-textarea"
+                    id="floatingTextarea2"
+                    placeholder="Por favor escriba aqui su comentario..."
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Por favor ingrese un comentario valido.
+                  </div>
+                  <label for="floatingTextarea2"
+                    >Por favor escriba aqui su comentario...</label
+                  >
+                </div>
+              </div>
+              <div class="boton-form">
+                <button type="submit" class="btn text-white boton-modal">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
