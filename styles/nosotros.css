@@ -61,8 +61,9 @@ body {
 }
 .section {
   /* border: 5px solid red; */
-  width: 280px;
-  height: 390px;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
   margin: 15px;
   box-shadow: 3px 3px 3px 2px var(--color-prueba4);
   background-color: var(--color-prueba1);
@@ -70,7 +71,15 @@ body {
   border-radius: 13px 13px 0px 0px;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+  }
+}
+.nosotros {
+  width: 100%;
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .contenedor-image {
