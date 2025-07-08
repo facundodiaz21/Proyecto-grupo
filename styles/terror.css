@@ -1,0 +1,83 @@
+ body {
+        background-color:  #1e2e4f;
+        color: #f8f9fa;
+      }
+
+      .titulo {
+        color: #ffffff;
+      }
+
+      .buscador {
+        background-color: #fff;
+        color: #212529;
+        border: 1px solid #6c757d;
+      }
+
+      .card {
+        background-color: #31487a;
+        border:solid 1px rgb(255, 255, 255);
+        transition: transform 0.3s ease;
+        min-height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        z-index: 1;
+      }
+
+      .card-title {
+        color: #f8f9fa;
+      }
+
+      .card-text {
+        color: #ced4da;
+        min-height: 85px;
+      }
+      .game-desc {
+        height: 50px;      
+        overflow: hidden; 
+        text-overflow: ellipsis;
+      }
+      .game-img {
+       height: 150px;
+       object-fit: cover;
+      }
+      .badge-plataforma {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        border-radius: 5px;
+      }
+
+      .badge-ps {
+        background-color: #3751ff;
+      }
+
+      .badge-pc {
+        background-color: #198754;
+      }
+      .iconos-plataformas {
+        display: flex;
+        gap: 8px; 
+        flex-wrap: wrap;
+      }
+
+      .etiqueta {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .btn-comprar {
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        color: #f8f9fa;
+        transition: 0.2s ease;
+      }
+
+      .btn-comprar:hover {
+        background-color:#1e2e4f;
+        color: #fff;
+      }
