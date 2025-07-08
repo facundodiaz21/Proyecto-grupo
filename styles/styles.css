@@ -33,6 +33,18 @@
 }
 
 /* SECCION DESCUENTOS */
+.titulos-descuentos {
+  text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 25px 10px;
+  width: 95%;
+  margin: 15px auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .precio-detalle {
   text-decoration: line-through;
 }
@@ -43,24 +55,89 @@
 }
 .cont-card-desc {
   /* border: 2px solid black; */
-  margin: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   /* width: 100%; */
 }
+.hijo-card-desc {
+  /* border: 2px solid red; */
+  height: 550px;
+}
+.cont-cardbody {
+  height: 45%;
+  /* border: 2px solid blue; */
+}
+.card-body {
+  /* border: 2px solid green; */
+  height: 100%;
+  padding: 3px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cont-img-descuentos {
+  /* border: 2px solid yellow; */
+  height: 55%;
+  .item-img-desc {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 /* MEDIAQUERIES */
 @media (min-width: 768px) {
   .cont-card-desc {
+    margin: 5px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-direction: column;
+    gap: 10px;
   }
-  /* .padre-card-desc {
-    width: 100%;
-  } */
   .hijo-card-desc {
-    width: 48%;
+    height: 300px;
   }
-  .item-img-desc {
+  .cont-img-descuentos {
     height: 100%;
+  }
+  .cont-cardbody {
+    height: 100%;
+  }
+  .card-body {
+    padding: 8px;
+    justify-content: space-between;
+  }
+  .texto-titulo-descrip {
+    font-family: var(--fuente-texto-descrip);
+    font-size: 1.5em;
+  }
+  .card-text {
+    font-size: 1.3em;
+  }
+  .titulos-descuentos {
+    width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .cont-card-desc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .hijo-card-desc {
+    height: 400px;
+    width: 49.5%;
+  }
+  .cont-img-descuentos {
+    height: 100%;
+    .item-img-desc {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .titulos-descuentos {
+    width: 70%;
   }
 }
